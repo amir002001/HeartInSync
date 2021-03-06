@@ -19,4 +19,9 @@ public class MainController {
     public ModelAndView health(){
         return new ModelAndView("health");
     }
+
+    @GetMapping("/wordSearch")
+    public ModelAndView WordSearch(){
+        return new ModelAndView("WordSearch");
+    }
 }
