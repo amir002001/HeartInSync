@@ -10,4 +10,13 @@ public class MainController {
     public ModelAndView index(){
         return new ModelAndView("index");
     }
+
+    @GetMapping("/nutrition")
+    public ModelAndView nutrition(){
+        return new ModelAndView("nutrition");
+    }
+    @GetMapping("/health")
+    public ModelAndView health(){
+        return new ModelAndView("health");
+    }
 }

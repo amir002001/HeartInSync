@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <th:block th:replace="layout :: headChildren('Nutrition')"></th:block>
+</head>
+<body>
+<ul class="topnav">
+    <li><img class="logo" th:src="@{/images/logo.png}"></li>
+    <li><a th:href="@{/}">Home</a></li>
+    <li><a th:href="@{/nutrition}">Nutrition</a></li>
+    <li><a th:href="@{/health}">Health</a></li>
+    <li><img class="right" th:src="@{/images/profile.png}"/></li>
+</ul>
+<div class="nutrition">
+    <div class="nutritionDiv">
+        <h1>Nutrition</h1>
+        <img th:src="@{/images/saly.png}">
+    </div>
+</div>
+<div class="foodGuide">
+    <h1>Food Guide</h1>
+    <div class="items">
+        <div class="foodItem">
+            <img th:src="@{/images/saly.png}">
+        </div>
+        <div class="foodItem">
+            <img th:src="@{/images/saly.png}">
+        </div>
+        <div class="foodItem">
+            <img th:src="@{/images/saly.png}">
+        </div>
+        <div class="foodItem">
+            <img th:src="@{/images/saly.png}">
+        </div>
+        <div class="foodItem">
+            <img th:src="@{/images/saly.png}">
+        </div>
+        <div class="foodItem">
+            <img th:src="@{/images/saly.png}">
+        </div>
+    </div>
+</div>
+<div class="recipesSection">
+    <h1>Recipes</h1>
+
+</div>
+</body>
+</html>

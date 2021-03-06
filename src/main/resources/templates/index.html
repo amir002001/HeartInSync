@@ -5,6 +5,39 @@
     <th:block th:replace="layout :: headChildren('Heart in Sync')"></th:block>
 </head>
 <body>
+<ul class="topnav">
+    <li><img class="logo" th:src="@{/images/logo.png}"></li>
+    <li><a th:href="@{/}">Home</a></li>
+    <li><a th:href="@{/nutrition}">Nutrition</a></li>
+    <li><a th:href="@{/health}">Health</a></li>
+    <li><img class="right" th:src="@{/images/profile.png}"/></li>
+</ul>
+<div class="welcome">
+    <h1>Welcome</h1>
+    <img th:src="@{/images/saly.png}">
+</div>
+<img class="chatBox" th:src="@{/images/chat.png}">
+
+<div class="missionSection">
+    <h1>Mission Statement</h1>
+    <div class="missionDiv">
+        <img th:src="@{/images/saly.png}">
+        <p>For more than 60 years, Heart & Stroke has been dedicated to fighting heart disease and stroke. Our work has
+            saved thousands of lives and improved the lives of millions of others. You’ll probably run into someone
+            today who is alive and well thanks to the countless Canadians who have supported our cause with their time
+            and donations.
+
+            It could be the young boy you pass on the street whose heart defect was successfully mended thanks to
+            life-saving research. Or the woman at the coffee shop whose stroke was treated with a clot-busting drug. Or
+            the father whose hockey teammates saved his life with CPR.</p>
+    </div>
+</div>
+<div class="initiativeSection">
+    <div class="initiativeDiv">
+        <h1>Initiatives</h1>
+        <div class="carousel">carousel</div>
+    </div>
+</div>
 
 </body>
 </html>
