@@ -2,80 +2,116 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 }
-ul.topnav {
+
+.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #BD9EFF;
+    align-items: center;
 }
 
-ul li img.right {
-    width: 64px;
-    float: right;
+.topnav li img:last-child {
+    width: 80px;
+    margin-left: auto;
 }
+
 .logo {
-    width: 80px
+    width: 80px;
 }
 
-ul.topnav li {float: left;}
-
+ul li {
+    height: 100%;
+}
 ul.topnav li a {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 2rem;
 }
-
-ul.topnav li a:hover:not(.active) {background-color: #111;}
-
-ul.topnav li a.active {background-color: #4CAF50;}
 
 ul.topnav li a:hover {
     color: white;
-}
-ul.topnav li.right {float: right;}
-
-@media screen and (max-width: 600px) {
-    ul.topnav li.right,
-    ul.topnav li {float: none;}
+    background-color: #F17575;
 }
 
 .welcome {
+    margin: auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    padding-top: 40px;
 }
 
 .chatBox {
     position: fixed;
     left: 18px;
     bottom: 25px;
-    width: 128px;
+    width: 64px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #BD9EFF;
 }
 
-.missionSection{
+.missionSection {
     background-color: #F17575;
+    padding-top: 40px;
 }
 
+.missionSection h1 {
+    text-align: center;
+}
 
 .missionDiv, .nutritionDiv {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
 }
+
 .missionDiv p {
     color: white;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    width: 80ch;
 }
 
 .carousel {
-    height: 80vh;
+    height: 50vh;
     width: 50vw;
     margin: auto;
-    background-color: #F17575;
+    background-color: #BD9EFF;
+}
+
+.initiativeSection {
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+
+.nutrition {
+    width: 80%;
+    margin: auto;
 }
 
 .foodGuide {
     background-color: #F17575;
+    padding-top: 40px;
+}
+
+.foodGuide h1 {
+    text-align: center;
+
 }
 
 .foodItem img {
@@ -85,10 +121,14 @@ ul.topnav li.right {float: right;}
 .items {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
 }
 
 .items * {
-    width: 30vw;
+    margin: 2rem 4rem;
 }
 
