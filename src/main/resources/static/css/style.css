@@ -83,6 +83,12 @@ ul.topnav li.right {float: right;}
 }
 
 .items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+.items * {
+    width: 30vw;
 }
 
