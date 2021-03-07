@@ -271,3 +271,13 @@ h1 {
 #answerBox .button {
     margin: 20px 20px;
 }
+p{
+    line-height: 1.5;
+}
+
+.healthDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
