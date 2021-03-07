@@ -24,4 +24,8 @@ public class MainController {
     public ModelAndView WordSearch(){
         return new ModelAndView("WordSearch");
     }
+    @GetMapping("/mcqGame")
+    public ModelAndView mcqGame(){
+        return new ModelAndView("mcqGame");
+    }
 }
