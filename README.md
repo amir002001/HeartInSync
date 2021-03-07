@@ -1,4 +1,4 @@
-![logo](logo.png "Title")
+![logo](logo.png "logo")
 ### **Inspiration:**
 
 A quarter of all Canadian adults are hypertensive, which is a primary determinant for stroke and heart diseases. By adopting a healthy lifestyle, these risks can be eliminated. Our website considers a wide variety of lifestyle components, from nutrition to mental health, and allows users to implement them in their everyday lives with ease.
