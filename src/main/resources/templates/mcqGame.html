@@ -6,20 +6,7 @@
     <script th:src="@{/js/McqGame.js}"></script>
 </head>
 <body>
-<ul class="topnav">
-    <li><img class="logo" th:src="@{/images/logo.png}"></li>
-    <li><a th:href="@{/}">Home</a></li>
-    <li><a th:href="@{/nutrition}">Nutrition</a></li>
-    <li><a th:href="@{/health}">Health</a></li>
-    <li class="dropdown"><a href="#">Games <i class="down"></i></a>
-        <div class="dropdown-content">
-            <a th:href="@{/wordGame}">Word Game</a>
-            <a th:href="@{/mcqGame}">Health Quiz</a>
-            <a href="#">blah</a>
-        </div>
-    </li>
-    <li><img th:src="@{/images/profile.png}"/></li>
-</ul>
+<th:block th:replace="layout :: nav"></th:block>
 <div id="mcqGame">
     <div id="questionBox"></div>
     <div id="answerBox"></div>

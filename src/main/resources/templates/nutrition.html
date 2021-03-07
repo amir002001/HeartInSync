@@ -5,15 +5,7 @@
     <th:block th:replace="layout :: headChildren('Nutrition')"></th:block>
 </head>
 <body>
-<ul class="topnav">
-    <li><img class="logo" th:src="@{/images/logo.png}"></li>
-    <li><a th:href="@{/}">Home</a></li>
-    <li><a th:href="@{/nutrition}">Nutrition</a></li>
-    <li><a th:href="@{/health}">Health</a></li>
-    <li><a th:href="@{/wordGame}">Word Game</a></li>
-    <li><img class="right" th:src="@{/images/profile.png}"/></li>
-
-</ul>
+<th:block th:replace="layout :: nav"></th:block>
 <div class="nutrition">
     <div class="nutritionDiv">
         <div><h1>Nutrition</h1>
