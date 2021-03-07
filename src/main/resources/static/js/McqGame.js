@@ -62,7 +62,7 @@ $(document).ready(() => {
 
             return btn;
         });
-        $("#questionBox").append($(`<p>${question.question}</p>`));
+        $("#questionBox").append($(`<h3>${question.question}</h3>`));
         $("#questionBox").append($(`<img src="/images/q${questions.indexOf(question) + 1}.jpeg">`))
         buttons.forEach((value => {
             $("#answerBox").append(value);

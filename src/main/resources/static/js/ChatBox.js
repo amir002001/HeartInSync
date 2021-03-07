@@ -37,7 +37,7 @@ function startChatting() {
                     btn.css({"align-self": "flex-end", "background-color": "#BD9EFF", "text-align": "right"});
                     btn.click(null)
                     $(".chatDiv").append(btn)
-                    value.response.css({"align-self": "flex-start", "text-align": "left"} )
+                    value.response.css({"align-self": "flex-start", "text-align": "left", "background-color": "#4A67FE"} )
                     $(".chatDiv").append(value.response);
         })
         $(".chatDiv").append(btn);

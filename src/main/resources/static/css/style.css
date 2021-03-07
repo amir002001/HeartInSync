@@ -52,13 +52,22 @@ ul.topnav li a:hover {
     justify-content: center;
     padding-top: 40px;
 }
+
 .welcome h1 {
     font-size: 4rem;
+    font-weight: 100;
+    width: 80%;
 }
-.welcome h1:last-child {
+
+.welcome h1:nth-child(2) {
     font-weight: bold;
     color: #F17575;
 }
+
+.welcome p {
+    width: 40ch;
+}
+
 .chatBox {
     position: fixed;
     left: 18px;
@@ -110,17 +119,26 @@ ul.topnav li a:hover {
     height: 80vh;
 
 }
+
 h1 {
     font-weight: bold;
     font-size: 4rem;
 }
+
+.missionDiv img {
+    width: 720px;
+    margin-right: 20px;
+}
+
 .missionSection h1 {
     text-align: center;
     font-weight: bold;
     color: #4A67FE;
     font-size: 4rem;
 }
-
+.nutritionDiv h1 {
+    color: #F17575;
+}
 .missionDiv, .nutritionDiv {
     margin: 40px auto;
     width: 60%;
@@ -128,20 +146,16 @@ h1 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
+}
+.nutritionDiv div {
+    display: flex;
+    flex-direction: column;
 }
 
 .missionDiv p {
-    font-size: 1.5rem;
     line-height: 1.5;
     width: 80ch;
-}
-
-.carousel {
-    height: 50vh;
-    width: 50vw;
-    margin: auto;
-    background-color: #BD9EFF;
+    text-align: justify;
 }
 
 .initiativeSection {
@@ -156,7 +170,7 @@ h1 {
 }
 
 .recipes {
-    background-color: #F17575;
+    background-color: white;
     padding-top: 40px;
 }
 
@@ -186,13 +200,14 @@ h1 {
     width: 20ch;
     text-decoration: none;
     text-align: center;
-    color: white;
+    color: black;
     font-weight: bold;
     line-height: 1.5;
 }
 
 .foodItem a:hover {
-    color: black;
+    color: #F17575;
+    transition: all ease-in-out 100ms;
 }
 
 .items * {
@@ -236,27 +251,33 @@ h1 {
 
 #mcqGame .button, .startChatting {
     margin: 30px auto;
-    background-color: #F17575;
+    background-color: black;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1rem;
     border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
-#mcqGame .button:focus, .startChatting:focus .prompts:focus{
-    box-shadow: 0 8px 13px 6px rgba(0,0,0,0.23);
+#mcqGame .button:focus, .startChatting:focus .prompts:focus {
+    box-shadow: 0 8px 13px 6px rgba(0, 0, 0, 0.23);
 }
+
 #mcqGame {
-    margin-top: 1rem;
+    height: 89.9vh;
+    background: rgb(241,117,117);
+    background: linear-gradient(180deg, rgba(241,117,117,1) 0%, rgba(244,180,180,1) 100%);
 }
 
 :active, :focus {
     outline: none;
 }
+
 #mcqGame, #questionBox {
     display: flex;
     flex-direction: column;
@@ -271,13 +292,66 @@ h1 {
 #answerBox .button {
     margin: 20px 20px;
 }
-p{
+
+p {
     line-height: 1.5;
 }
 
-.healthDiv{
+.health {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
+    margin: auto;
+    width: 60%;
+}
+
+.health h1 {
+    color: #F17575;
+}
+
+.health p {
+    width: 40ch;
+}
+
+.healthDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.healthDiv img {
+    height: 256px;
+    width: 256px;
+    object-fit: none;
+}
+
+.healthDiv div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.healthSect {
+    width: 80%;
+    margin: 6rem auto;
+}
+
+.healthSect h1 {
+    color: #4A67FE;
+    text-align: center
+}
+
+.healthDiv div:nth-child(2) img {
+    object-position: 0 120%;
+}
+
+.healthDiv p {
+    padding: 10px;
+    width: 35ch;
+    text-align: center;
 }
